@@ -28,10 +28,11 @@ class GFButton: UIButton {
     
     //private - so it can be used only from inside of class
     private func configure() {
+        translatesAutoresizingMaskIntoConstraints = false //autolayout programmatic constraints
+        
         layer.cornerRadius      = 10
         titleLabel?.textColor   = .white
         titleLabel?.font        = UIFont.preferredFont(forTextStyle: .headline) //Dynamic type
-        translatesAutoresizingMaskIntoConstraints = false //autolayout programmatic constraints
     }
     
 }
