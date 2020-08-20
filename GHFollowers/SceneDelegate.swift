@@ -18,8 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene //fullscreen
         window?.rootViewController = createTabBar()
-        
         window?.makeKeyAndVisible() //activate
+        
+        configureNavigationBar()
+    }
+    
+    func configureNavigationBar() {
+        UINavigationBar.appearance().tintColor = .systemGreen
     }
     
     func createSearchNC() -> UINavigationController {
