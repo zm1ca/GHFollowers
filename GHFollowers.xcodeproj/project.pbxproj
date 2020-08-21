@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4053051924F02D89000ED6EA /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053051824F02D89000ED6EA /* ErrorMessage.swift */; };
+		4053051924F02D89000ED6EA /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053051824F02D89000ED6EA /* GFError.swift */; };
 		4062745424EE5AB500BF4775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062745324EE5AB500BF4775 /* AppDelegate.swift */; };
 		4062745624EE5AB500BF4775 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062745524EE5AB500BF4775 /* SceneDelegate.swift */; };
 		4062745D24EE5AB600BF4775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4062745C24EE5AB600BF4775 /* Assets.xcassets */; };
@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4053051824F02D89000ED6EA /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		4053051824F02D89000ED6EA /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		4062745024EE5AB500BF4775 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4062745324EE5AB500BF4775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4062745524EE5AB500BF4775 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		4053051724F02D66000ED6EA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				4053051824F02D89000ED6EA /* ErrorMessage.swift */,
+				4053051824F02D89000ED6EA /* GFError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 				40CDD6E324EFAFD90027EDA7 /* UIViewController+Ext.swift in Sources */,
 				4062746C24EE6DAD00BF4775 /* GFButton.swift in Sources */,
 				40CDD6E124EFA5710027EDA7 /* GFAlertVC.swift in Sources */,
-				4053051924F02D89000ED6EA /* ErrorMessage.swift in Sources */,
+				4053051924F02D89000ED6EA /* GFError.swift in Sources */,
 				40CDD6DF24EFA49C0027EDA7 /* GFBodyLabel.swift in Sources */,
 				40CDD6EB24EFE57B0027EDA7 /* Follower.swift in Sources */,
 				40B4DA4624EEC4BA0001E780 /* GFTitleLabel.swift in Sources */,
