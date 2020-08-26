@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		403439E624F6A00800921C58 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403439E524F6A00800921C58 /* GFEmptyStateView.swift */; };
 		4053051924F02D89000ED6EA /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053051824F02D89000ED6EA /* GFError.swift */; };
 		4062745424EE5AB500BF4775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062745324EE5AB500BF4775 /* AppDelegate.swift */; };
 		4062745624EE5AB500BF4775 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062745524EE5AB500BF4775 /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		403439E524F6A00800921C58 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		4053051824F02D89000ED6EA /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		4062745024EE5AB500BF4775 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4062745324EE5AB500BF4775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		403439DE24F69FAA00921C58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				403439E524F6A00800921C58 /* GFEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		403439DF24F69FAF00921C58 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4062746B24EE6DAD00BF4775 /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		403439E024F69FB400921C58 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				4062746D24EE74BA00BF4775 /* GFTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		403439E224F69FC100921C58 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				40E22E9724F3A0ED001CFD54 /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		403439E324F69FC700921C58 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				40CDD6E024EFA5710027EDA7 /* GFAlertVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		403439E424F69FDB00921C58 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				40B4DA4524EEC4BA0001E780 /* GFTitleLabel.swift */,
+				40CDD6DE24EFA49C0027EDA7 /* GFBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
 		4053051724F02D66000ED6EA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,13 +176,13 @@
 		40CDD6E524EFC07A0027EDA7 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				403439E424F69FDB00921C58 /* Labels */,
+				403439E324F69FC700921C58 /* ViewControllers */,
+				403439E224F69FC100921C58 /* ImageViews */,
+				403439E024F69FB400921C58 /* TextFields */,
+				403439DF24F69FAF00921C58 /* Buttons */,
+				403439DE24F69FAA00921C58 /* Views */,
 				40E22E9224F3A006001CFD54 /* Cells */,
-				40CDD6E024EFA5710027EDA7 /* GFAlertVC.swift */,
-				4062746B24EE6DAD00BF4775 /* GFButton.swift */,
-				4062746D24EE74BA00BF4775 /* GFTextField.swift */,
-				40B4DA4524EEC4BA0001E780 /* GFTitleLabel.swift */,
-				40CDD6DE24EFA49C0027EDA7 /* GFBodyLabel.swift */,
-				40E22E9724F3A0ED001CFD54 /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -256,6 +307,7 @@
 				40CDD6DF24EFA49C0027EDA7 /* GFBodyLabel.swift in Sources */,
 				40CDD6EB24EFE57B0027EDA7 /* Follower.swift in Sources */,
 				40B4DA4624EEC4BA0001E780 /* GFTitleLabel.swift in Sources */,
+				403439E624F6A00800921C58 /* GFEmptyStateView.swift in Sources */,
 				40697B8D24EFEFE800CD702D /* NetworkManager.swift in Sources */,
 				4062746824EE666100BF4775 /* SearchVC.swift in Sources */,
 				4062745424EE5AB500BF4775 /* AppDelegate.swift in Sources */,
