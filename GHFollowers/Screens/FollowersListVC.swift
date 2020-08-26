@@ -53,12 +53,17 @@ class FollowersListVC: UIViewController {
     
     //do we need to pass Username?
     func getFollowers(username: String, page: Int) {
+        
+        showLoadingView()
+        
         NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
             guard let self = self else { return }
             
+            self.dismissLoadingView()
             switch result {
             case .success(let followers):
-                if followers.count < 100 { self.hasMoreFollowers = false }
+                #warning("Hardcoded users per page")
+                if followers.count < 30 { self.hasMoreFollowers = false }
                 self.followers.append(contentsOf: followers)
                 self.updateData()
                 
@@ -92,7 +97,7 @@ extension FollowersListVC: UICollectionViewDelegate {
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let offsetY         = scrollView.contentOffset.y
         let contentHeight   = scrollView.contentSize.height
-        let screenHeight          = scrollView.frame.size.height
+        let screenHeight    = scrollView.frame.size.height
         
         if offsetY > contentHeight - screenHeight {
             guard hasMoreFollowers else { return }
