@@ -49,8 +49,6 @@ class NetworkManager {
             } catch {
                 completed(.failure(.invalidData))
             }
-            
-            //return?
         }
         
         task.resume()
