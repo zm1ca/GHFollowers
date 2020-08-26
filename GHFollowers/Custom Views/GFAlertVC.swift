@@ -10,8 +10,8 @@ import UIKit
 class GFAlertVC: UIViewController {
     
     let containerView = UIView()
-    let titleLabel = GFTitleLabel(textAlignent: .center, fontSize: 20)
-    let messageLabel = GFBodyLabel(textAlignent: .center)
+    let titleLabel = GFTitleLabel(textAlignment: .center, fontSize: 20)
+    let messageLabel = GFBodyLabel(textAlignment: .center)
     let actionButton = GFButton(backgroundColor: .systemPink, title: "Ok")
     
     var alertTitle: String?
@@ -63,7 +63,6 @@ class GFAlertVC: UIViewController {
     func configureTitleLabel() {
         containerView.addSubview(titleLabel)
         titleLabel.text = alertTitle ?? "Something went wrong"
-        titleLabel.textAlignment = .center // extra
         
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: padding),
