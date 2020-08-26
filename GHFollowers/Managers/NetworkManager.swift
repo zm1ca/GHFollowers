@@ -5,12 +5,13 @@
 //  Created by Źmicier Fiedčanka on 21.08.20.
 //
 
-import Foundation
+import UIKit
 
 class NetworkManager {
     static let shared    = NetworkManager() // It's singleton, so only 1 instance and it's static
-    let baseURL          = "https://api.github.com/users/"
-    let followersPerPage = 100
+    private let baseURL          = "https://api.github.com/users/"
+    private let followersPerPage = 100
+    let cache = NSCache<NSString, UIImage>()
     
     private init() { }
     
