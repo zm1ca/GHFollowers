@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		403439E624F6A00800921C58 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403439E524F6A00800921C58 /* GFEmptyStateView.swift */; };
+		403439E824F79D1B00921C58 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403439E724F79D1B00921C58 /* UserInfoVC.swift */; };
 		4053051924F02D89000ED6EA /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053051824F02D89000ED6EA /* GFError.swift */; };
 		4062745424EE5AB500BF4775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062745324EE5AB500BF4775 /* AppDelegate.swift */; };
 		4062745624EE5AB500BF4775 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062745524EE5AB500BF4775 /* SceneDelegate.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		403439E524F6A00800921C58 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
+		403439E724F79D1B00921C58 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		4053051824F02D89000ED6EA /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		4062745024EE5AB500BF4775 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4062745324EE5AB500BF4775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				4062746724EE666100BF4775 /* SearchVC.swift */,
 				4062746924EE66BE00BF4775 /* FavoritesListVC.swift */,
 				40B4DA4324EEB8430001E780 /* FollowersListVC.swift */,
+				403439E724F79D1B00921C58 /* UserInfoVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				4062746824EE666100BF4775 /* SearchVC.swift in Sources */,
 				4062745424EE5AB500BF4775 /* AppDelegate.swift in Sources */,
 				4062745624EE5AB500BF4775 /* SceneDelegate.swift in Sources */,
+				403439E824F79D1B00921C58 /* UserInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
