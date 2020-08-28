@@ -35,4 +35,10 @@ class GFButton: UIButton {
         setTitleColor(.white, for: .normal) //not titleLabel?.textColor   = .white
     }
     
+    
+    func set(backgroundColor: UIColor, title: String) {
+        self.backgroundColor = backgroundColor
+        setTitle(title, for: .normal)
+    }
+    
 }

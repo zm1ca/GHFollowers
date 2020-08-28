@@ -11,6 +11,8 @@
 		403439E824F79D1B00921C58 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403439E724F79D1B00921C58 /* UserInfoVC.swift */; };
 		4050C46D24F92D6100D42947 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050C46C24F92D6100D42947 /* GFItemInfoView.swift */; };
 		4050C46F24F936BE00D42947 /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050C46E24F936BE00D42947 /* GFItemInfoVC.swift */; };
+		4050C47124F93A2B00D42947 /* GFRepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050C47024F93A2B00D42947 /* GFRepoItemVC.swift */; };
+		4050C47324F9424A00D42947 /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050C47224F9424A00D42947 /* GFFollowerItemVC.swift */; };
 		4053051924F02D89000ED6EA /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053051824F02D89000ED6EA /* GFError.swift */; };
 		4062745424EE5AB500BF4775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062745324EE5AB500BF4775 /* AppDelegate.swift */; };
 		4062745624EE5AB500BF4775 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062745524EE5AB500BF4775 /* SceneDelegate.swift */; };
@@ -41,6 +43,8 @@
 		403439E724F79D1B00921C58 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		4050C46C24F92D6100D42947 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 		4050C46E24F936BE00D42947 /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
+		4050C47024F93A2B00D42947 /* GFRepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRepoItemVC.swift; sourceTree = "<group>"; };
+		4050C47224F9424A00D42947 /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
 		4053051824F02D89000ED6EA /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		4062745024EE5AB500BF4775 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4062745324EE5AB500BF4775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,9 +119,9 @@
 		403439E324F69FC700921C58 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4050C47424F9429B00D42947 /* ItemInfoVCs */,
 				40CDD6E024EFA5710027EDA7 /* GFAlertVC.swift */,
 				4070950624F9018D005AF31B /* GFUserInfoHeaderVC.swift */,
-				4050C46E24F936BE00D42947 /* GFItemInfoVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -130,6 +134,16 @@
 				4070950824F901F1005AF31B /* GFSecondaryTitleLabel.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		4050C47424F9429B00D42947 /* ItemInfoVCs */ = {
+			isa = PBXGroup;
+			children = (
+				4050C46E24F936BE00D42947 /* GFItemInfoVC.swift */,
+				4050C47024F93A2B00D42947 /* GFRepoItemVC.swift */,
+				4050C47224F9424A00D42947 /* GFFollowerItemVC.swift */,
+			);
+			path = ItemInfoVCs;
 			sourceTree = "<group>";
 		};
 		4053051724F02D66000ED6EA /* Utilities */ = {
@@ -322,6 +336,7 @@
 				40E22E9824F3A0ED001CFD54 /* GFAvatarImageView.swift in Sources */,
 				4062746C24EE6DAD00BF4775 /* GFButton.swift in Sources */,
 				40CDD6E124EFA5710027EDA7 /* GFAlertVC.swift in Sources */,
+				4050C47324F9424A00D42947 /* GFFollowerItemVC.swift in Sources */,
 				4050C46D24F92D6100D42947 /* GFItemInfoView.swift in Sources */,
 				40E22E9424F3A023001CFD54 /* FollowerCell.swift in Sources */,
 				4053051924F02D89000ED6EA /* GFError.swift in Sources */,
@@ -335,6 +350,7 @@
 				4062746824EE666100BF4775 /* SearchVC.swift in Sources */,
 				4062745424EE5AB500BF4775 /* AppDelegate.swift in Sources */,
 				4062745624EE5AB500BF4775 /* SceneDelegate.swift in Sources */,
+				4050C47124F93A2B00D42947 /* GFRepoItemVC.swift in Sources */,
 				403439E824F79D1B00921C58 /* UserInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
