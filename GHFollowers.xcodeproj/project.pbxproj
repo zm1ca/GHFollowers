@@ -30,6 +30,7 @@
 		4070950924F901F1005AF31B /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4070950824F901F1005AF31B /* GFSecondaryTitleLabel.swift */; };
 		4070950B24F907E6005AF31B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4070950A24F907E6005AF31B /* Constants.swift */; };
 		4098355324FE304100C3274E /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098355224FE304100C3274E /* FavoriteCell.swift */; };
+		4098355624FE41AA00C3274E /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098355524FE41AA00C3274E /* GFTabBarController.swift */; };
 		40B4DA4424EEB8430001E780 /* FollowersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B4DA4324EEB8430001E780 /* FollowersListVC.swift */; };
 		40B4DA4624EEC4BA0001E780 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B4DA4524EEC4BA0001E780 /* GFTitleLabel.swift */; };
 		40C817AA24F65015003596B4 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C817A924F65015003596B4 /* UIHelper.swift */; };
@@ -68,6 +69,7 @@
 		4070950824F901F1005AF31B /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		4070950A24F907E6005AF31B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4098355224FE304100C3274E /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		4098355524FE41AA00C3274E /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		40B4DA4324EEB8430001E780 /* FollowersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListVC.swift; sourceTree = "<group>"; };
 		40B4DA4524EEC4BA0001E780 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		40C817A924F65015003596B4 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
@@ -183,10 +185,10 @@
 		4062745224EE5AB500BF4775 /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				40CDD6E824EFCB620027EDA7 /* Support */,
 				4053051724F02D66000ED6EA /* Utilities */,
 				40697B8E24EFF01100CD702D /* Managers */,
 				40CDD6E924EFE5680027EDA7 /* Model */,
-				40CDD6E824EFCB620027EDA7 /* Support */,
 				40CDD6E624EFC0A80027EDA7 /* Extensions */,
 				40CDD6E524EFC07A0027EDA7 /* Custom Views */,
 				40CDD6E424EFC0210027EDA7 /* Screens */,
@@ -203,6 +205,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		4098355424FE418300C3274E /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4098355524FE41AA00C3274E /* GFTabBarController.swift */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
 		40CDD6E424EFC0210027EDA7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +227,7 @@
 		40CDD6E524EFC07A0027EDA7 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				4098355424FE418300C3274E /* TabBarControllers */,
 				403439E424F69FDB00921C58 /* Labels */,
 				403439E324F69FC700921C58 /* ViewControllers */,
 				403439E224F69FC100921C58 /* ImageViews */,
@@ -353,6 +364,7 @@
 				4050C46D24F92D6100D42947 /* GFItemInfoView.swift in Sources */,
 				4098355324FE304100C3274E /* FavoriteCell.swift in Sources */,
 				40E22E9424F3A023001CFD54 /* FollowerCell.swift in Sources */,
+				4098355624FE41AA00C3274E /* GFTabBarController.swift in Sources */,
 				401CD5B124FBEA1400A2E0BA /* PersistanceManager.swift in Sources */,
 				4053051924F02D89000ED6EA /* GFError.swift in Sources */,
 				4070950724F9018D005AF31B /* GFUserInfoHeaderVC.swift in Sources */,
@@ -509,6 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y322LSDU5;
 				INFOPLIST_FILE = GHFollowers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,6 +541,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y322LSDU5;
 				INFOPLIST_FILE = GHFollowers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
