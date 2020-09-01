@@ -101,10 +101,10 @@ class UserInfoVC: UIViewController {
     
     
     func add(childVC: UIViewController, to containerView: UIView) {
-        addChild(childVC) //???
+        addChild(childVC)
         containerView.addSubview(childVC.view)
         childVC.view.frame = containerView.bounds
-        childVC.didMove(toParent: self) //???
+        childVC.didMove(toParent: self)
     }
     
     @objc func dismissVC() {
