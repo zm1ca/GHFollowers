@@ -61,6 +61,7 @@ class FollowersListVC: UIViewController {
     
     
     func configureSearchController() {
+        
         let searchController                                    = UISearchController()
         searchController.searchResultsUpdater                   = self
         searchController.searchBar.delegate                     = self
