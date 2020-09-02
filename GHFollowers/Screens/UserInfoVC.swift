@@ -118,6 +118,7 @@ class UserInfoVC: GFDataLoadingVC {
         childVC.didMove(toParent: self)
     }
     
+    
     @objc func dismissVC() {
         dismiss(animated: true)
     }
@@ -131,6 +132,7 @@ extension UserInfoVC: GFRepoItemVCDelegate {
             presentGFAlertOnMainThread(title: "Invalid URL", message: "URL attached to this user is invalid.", buttonTitle: "Ok")
             return
         }
+        
         presentSafariVC(with: url)
     }
 }
@@ -143,6 +145,7 @@ extension UserInfoVC: GFFollowerItemVCDelegate {
             presentGFAlertOnMainThread(title: "No followers", message: "This user has no followers ☹️", buttonTitle: "So sad.")
             return
         }
+        
         delegate.didRequestFollowers(for: user.login)
         dismissVC()
     }

@@ -12,9 +12,9 @@ class SearchVC: UIViewController {
     let logoImageView       = UIImageView()
     let usernameTextField   = GFTextField()
     let callToActionButton  = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
-    var logoImageViewTopConstraint: NSLayoutConstraint!
     
     var isUsernameEntered: Bool { return !usernameTextField.text!.isEmpty }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +26,13 @@ class SearchVC: UIViewController {
         createDismissKeyboardGesture()
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         usernameTextField.text = ""
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
     
     func createDismissKeyboardGesture() {
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing)) //Resign first responder
@@ -77,6 +79,7 @@ class SearchVC: UIViewController {
         ])
     }
     
+    
     func configureCallToActionButton() {
         callToActionButton.addTarget(self, action: #selector(pushFollowersListVC), for: .touchUpInside)
         
@@ -91,6 +94,7 @@ class SearchVC: UIViewController {
 
 
 extension SearchVC: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         pushFollowersListVC()
         return true

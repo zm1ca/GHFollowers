@@ -14,9 +14,11 @@ class GFTextField: UITextField {
         configure()
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +36,6 @@ class GFTextField: UITextField {
         backgroundColor             = .tertiarySystemBackground
         autocorrectionType          = .no //because of usernames
         clearButtonMode             = .whileEditing
-        
         placeholder                 = "Enter a username"
     }
 }

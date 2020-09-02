@@ -15,6 +15,7 @@ class GFTabBarController: UITabBarController {
         self.viewControllers            = [createSearchNC(), createFavoritesNC()]
     }
     
+    
     func createSearchNC() -> UINavigationController {
         let searchVC = SearchVC()
         searchVC.title = "Search"

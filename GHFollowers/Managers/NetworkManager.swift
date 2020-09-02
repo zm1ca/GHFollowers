@@ -8,15 +8,15 @@
 import UIKit
 
 class NetworkManager {
-    static let shared            = NetworkManager() // It's singleton, so only 1 instance and it's static
+    
+    static let shared            = NetworkManager()
     private let baseURL          = "https://api.github.com/users/"
-    private let followersPerPage = 30
     let cache = NSCache<NSString, UIImage>()
     
     private init() { }
     
     func getFollowers(for username: String, page: Int, completed: @escaping (Result<[Follower], GFError>) -> Void) {
-        let endpoint = baseURL + "\(username)/followers?per_page=\(followersPerPage)&page=\(page)"
+        let endpoint = baseURL + "\(username)/followers?per_page=30&page=\(page)"
     
         guard let url = URL(string: endpoint) else {
             completed(.failure(.invalidUsername))

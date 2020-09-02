@@ -58,7 +58,8 @@ class GFItemInfoVC: UIViewController {
     }
     
     
-    @objc func actionButtonTapped() { } //Override in subclasses
+    @objc func actionButtonTapped() { }
+    
     
     private func layoutUI() {
         view.addSubviews(stackView, actionButton)
