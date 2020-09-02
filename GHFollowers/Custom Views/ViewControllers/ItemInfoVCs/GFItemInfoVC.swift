@@ -15,8 +15,7 @@ class GFItemInfoVC: UIViewController {
     let actionButton    = GFButton()
     
     var user: User!
-    weak var delegate: UserInfoVCDelegate!
-    
+
     
     init(user: User) {
         super.init(nibName: nil, bundle: nil)
@@ -62,8 +61,7 @@ class GFItemInfoVC: UIViewController {
     @objc func actionButtonTapped() { } //Override in subclasses
     
     private func layoutUI() {
-        view.addSubview(stackView)
-        view.addSubview(actionButton)
+        view.addSubviews(stackView, actionButton)
             
         let padding: CGFloat = 20
         
