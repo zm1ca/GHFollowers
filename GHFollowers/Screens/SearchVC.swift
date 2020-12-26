@@ -35,7 +35,7 @@ class SearchVC: UIViewController {
     
     
     func createDismissKeyboardGesture() {
-        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing)) //Resign first responder
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
     }
     

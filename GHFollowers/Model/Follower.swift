@@ -9,7 +9,7 @@ import Foundation
 
 struct Follower: Codable, Hashable {
     var login: String
-    var avatarUrl: String //To be converted from camelCase to snake_case, like in API
+    var avatarUrl: String 
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(login)

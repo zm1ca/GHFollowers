@@ -36,20 +36,7 @@ class GFUserInfoHeaderVC: UIViewController {
         layoutUI()
         configureUIElements()
     }
-    
-    
-    func configureUIElements() {
-        avatarImageView.downloadImage(from: user.avatarUrl)
-        usernameLabel.text          = user.login
-        nameLabel.text              = user.name ?? "No username"
-        locationLabel.text          = user.location ?? "No location"
-        bioLabel.text               = user.bio ?? "No bio available"
-        bioLabel.numberOfLines      = 3
-        
-        locationImageView.image     = SFSymbols.location
-        locationImageView.tintColor = .secondaryLabel
-    }
-    
+
     
     func layoutUI() {
         let textImagePadding: CGFloat = 12
@@ -86,6 +73,19 @@ class GFUserInfoHeaderVC: UIViewController {
             bioLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bioLabel.heightAnchor.constraint(equalToConstant: 90)
         ])
+    }
+    
+    
+    func configureUIElements() {
+        avatarImageView.downloadImage(from: user.avatarUrl)
+        usernameLabel.text          = user.login
+        nameLabel.text              = user.name ?? "No username"
+        locationLabel.text          = user.location ?? "No location"
+        bioLabel.text               = user.bio ?? "No bio available"
+        bioLabel.numberOfLines      = 3
+        
+        locationImageView.image     = SFSymbols.location
+        locationImageView.tintColor = .secondaryLabel
     }
 }
 

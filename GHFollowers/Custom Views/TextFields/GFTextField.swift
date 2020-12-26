@@ -27,14 +27,14 @@ class GFTextField: UITextField {
         layer.borderWidth           = 2
         layer.borderColor           = UIColor.systemGray4.cgColor
         
-        textColor                   = .label //its white in dark mode and black in light
+        textColor                   = .label
         textAlignment               = .center
         font                        = UIFont.preferredFont(forTextStyle: .title2)
         adjustsFontSizeToFitWidth   = true
         minimumFontSize             = 12
         
         backgroundColor             = .tertiarySystemBackground
-        autocorrectionType          = .no //because of usernames
+        autocorrectionType          = .no
         clearButtonMode             = .whileEditing
         placeholder                 = "Enter a username"
     }
