@@ -39,7 +39,6 @@ class GFEmptyStateView: UIView {
         logoImageView.image         = Images.emptyStateLogo
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         
-        #warning("Check constraining empty screen at iPhone SE")
         let smallDeviceHeightCompensation: CGFloat = DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? 20 : 0
         
         NSLayoutConstraint.activate([
